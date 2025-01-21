@@ -1,16 +1,17 @@
-import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { HashRouter } from 'react-router-dom';
 
+// Create the root element where React will mount the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Wrap the app with BrowserRouter and set the basename
+// Render the React app into the root element
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/Educate">
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
