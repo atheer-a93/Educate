@@ -1,14 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-// Create the root element where React will mount the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Render the React app into the root element
+// Wrap the app with BrowserRouter and set the basename
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/Educate">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
